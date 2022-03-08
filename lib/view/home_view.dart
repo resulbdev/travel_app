@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/view/detail_view.dart';
-import 'package:travel_app/widget/homeTextline.dart';
-import 'package:travel_app/widget/Search_and_filter.dart';
-import 'package:travel_app/widget/home_card.dart';
-import 'package:travel_app/widget/location_widget.dart';
-import 'package:travel_app/widget/slider_widget.dart';
+import 'package:travel_app/widget/homewidgets/homeTextline.dart';
+import 'package:travel_app/widget/homewidgets/Search_and_filter.dart';
+import 'package:travel_app/widget/homewidgets/home_card.dart';
+import 'package:travel_app/widget/homewidgets/location_widget.dart';
+import 'package:travel_app/widget/homewidgets/slider_widget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
