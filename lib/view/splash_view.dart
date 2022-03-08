@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/view/home_view.dart';
 import 'package:travel_app/widget/splah_model.dart';
+import 'package:travel_app/widget/splash_button.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
@@ -92,44 +93,7 @@ class _SplashPageState extends State<SplashPage> {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) => HomePage()));
                   },
-                  child: Container(
-                    height: 50,
-                    width: 250,
-                    decoration: BoxDecoration(
-                      color: Color(0xFFF05A22),
-                      borderRadius: BorderRadius.all(Radius.circular(15)),
-                      boxShadow: [
-                        BoxShadow(
-                          offset: Offset(0, 5),
-                          color: Color(0xFFF05A22),
-                          blurRadius: 10,
-                        )
-                      ],
-                    ),
-                    child: Center(
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Text(
-                            "Get Started",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 22,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          SizedBox(
-                            width: 25,
-                          ),
-                          Icon(
-                            Icons.arrow_right_alt_outlined,
-                            color: Colors.white,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
+                  child: SplashButton(),
                 )
               ],
             ),
