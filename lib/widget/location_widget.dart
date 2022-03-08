@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:travel_app/view/detail_view.dart';
 
 class Location extends StatelessWidget {
   final String imageName;

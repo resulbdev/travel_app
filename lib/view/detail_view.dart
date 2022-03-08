@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/widget/detail_button.dart';
 import 'package:travel_app/widget/detail_circle_image.dart';
 import 'package:travel_app/widget/detail_image.dart';
 import 'package:travel_app/widget/detail_page_app_bar.dart';
+import 'package:travel_app/widget/review_button.dart';
 
 class DetailPage extends StatefulWidget {
   String imageName;
@@ -52,48 +54,8 @@ class _DetailPageState extends State<DetailPage> {
             Row(
               children: [
                 SizedBox(width: 25),
-                Container(
-                  child: Center(
-                    child: Text(
-                      "Detail",
-                      style: TextStyle(color: Colors.white, fontSize: 13),
-                    ),
-                  ),
-                  margin: EdgeInsets.only(right: 10),
-                  width: 75,
-                  height: 30,
-                  decoration: BoxDecoration(
-                    color: Color(0xFFF05A22),
-                    borderRadius: BorderRadius.all(Radius.circular(7)),
-                    boxShadow: [
-                      BoxShadow(
-                        offset: Offset(4, 3),
-                        blurRadius: 9,
-                        color: Color(
-                          0xFFF9C5B9,
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-                Container(
-                  child: Center(
-                    child: Text(
-                      "Review",
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 13,
-                          fontWeight: FontWeight.bold),
-                    ),
-                  ),
-                  width: 75,
-                  height: 30,
-                  decoration: BoxDecoration(
-                    color: Color(0xFFFFFFFF),
-                    borderRadius: BorderRadius.all(Radius.circular(7)),
-                    border: Border.all(color: Color(0xFFE0E0E0), width: 0.5),
-                  ),
-                ),
+                DetailButton(),
+                ReviewButton(),
               ],
             ),
             Padding(
