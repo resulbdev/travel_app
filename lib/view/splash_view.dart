@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/view/home_view.dart';
-import 'package:travel_app/widget/splah_model.dart';
-import 'package:travel_app/widget/splash_button.dart';
+import 'package:travel_app/widget/splashwidgets/splah_model.dart';
+import 'package:travel_app/widget/splashwidgets/splash_button.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
